@@ -25,7 +25,7 @@ Route::get('taskone/{first},{second}',[TaskoneController::class,'count']);
 //second problem
 Route::get('findindex/{chr}',[TaskoneController::class,'indexof']);
 //last problem
-Route::get('minstep/{chr1},{chr2}',[TaskoneController::class,'minstep']);
+Route::get('minstep/{chr}',[TaskoneController::class,'minstep']);
 //Second Task
 // user register & login
 Route::post('regester',[UserController::class,'register']);

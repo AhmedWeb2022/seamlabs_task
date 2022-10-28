@@ -29,12 +29,12 @@ return[$arr,count($arr)];
             }
         return $number; 
 }
-public function minstep ($fnumber, $lnumber) {
+public function minstep ($array) {
     $step=0;
-    $n=[(int) $fnumber,(int) $lnumber];
+    $array=explode(',',$array);
     $rr=[];
-    for($i=0; $i< count($n);$i++){
-        $a = $n[$i];
+    for($i=0; $i< count($array);$i++){
+        $a = $array[$i];
         $step=0;
         while($a !== 0) {
           $a % 2 === 0 ? $a /= 2 :$a--;
